@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">mat_calculator</string>
+    <string name="btncal">submit</string>
+    <string name="price">0</string>
+    <string name="bath">บาท</string>
+    <string name="special">0123456789</string>
+</resources>

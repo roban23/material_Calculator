@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <View
+            android:id="@+id/vOntop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:scaleType="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_price"
+            />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:maxLength="7"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:hint="0"
+            android:digits="@string/special"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:textColor="#6182E4"
+            android:background="@drawable/bg_editext"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            />
+
+        <View
+            android:id="@+id/vMid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:text="@string/btncal"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/bg_button"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:textSize="30sp"
+                android:text="@string/price"
+                android:gravity="center"
+                android:textColor="#216CEE"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/bath"
+                android:textSize="30sp"
+                android:gravity="center_vertical"
+                android:textColor="#216CEE"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
